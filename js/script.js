@@ -143,10 +143,13 @@ function generateNumber(){
         spanX. innerHTML = num1;
         spanY.innerHTML = num2;
         sign.src = "./media/plus.png"
+        document.querySelector("#Sign").classList.replace("bg-warning", "bg-info")
+
         total = parseInt(num1) + parseInt(num2); 
     } else if (addSub === "sub"){
         var num1 = Math.ceil(Math.random()*20);
         var num2 = Math.ceil(Math.random()*20);
+        document.querySelector("#Sign").classList.replace("bg-info", "bg-warning")
         sign.src = "./media/minus.png"
         if (num2 > num1){
             spanX.innerHTML = num2
