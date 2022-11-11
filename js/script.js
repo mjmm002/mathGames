@@ -105,7 +105,6 @@ function playGame(){
         location.reload()
     } else {
         playing = true;
-        hide("result");
         document.querySelector("#start").innerHTML = "RESTART THE GAME"
         score = 0;
         missed =0;
@@ -133,7 +132,6 @@ function generateNumber(){
     
     invisible("Total")
     hide("signDefault")
-    hide("result")
 
     show("Sign")
     show("game");
@@ -266,13 +264,13 @@ function countdown(){
             } else if (score >= 90){
                 Blues("ScoreResult")
             }
-            if (correct < 5){
+            if (correct < 7){
                 Red("Correct")
-            } else if (correct < 15){
+            } else if (correct < 13){
                 Orange("Correct")
-            } else if (correct < 20){
+            } else if (correct < 18){
                 Green("Correct")
-            } else if (correct >= 20){
+            } else if (correct >= 18){
                 Blues("Correct")
             }
             if (missed < 1){
