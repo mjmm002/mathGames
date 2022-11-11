@@ -22,7 +22,7 @@ function GameStart(){
     game.appendChild(divTimer);
 
     let spanTimer = document.createElement("span");
-    spanTimer.textContent = "60";
+    spanTimer.textContent = "30";
     spanTimer.id = "timer"
     spanTimer.classList = "fs-1"
     let spanScore = document.createElement("span");
@@ -112,7 +112,7 @@ function playGame(){
         accuracy = 0;
         correct= 0;
         document.querySelector("#score").innerHTML = score;
-        timeRemaining = 10;
+        timeRemaining = 30;
         countdown()
         generateNumber()
     }
