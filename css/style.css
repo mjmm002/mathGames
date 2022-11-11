@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+
+.num, .sign {
+    font-size: 5rem;
+    
+}
+.operator{
+    border: 5px solid black;
+}
+
+#pagpipilian {
+    border: 10px solid black;
+}
+#pagpipilian .num{
+    text-align: center;
+    border: 10px solid black;
+}
+.operator{
+    font-weight: 900;
+}
+.check img{
+    height: 5rem;
+    position: relative;
+    top: 0;
+}
+
+.sign img{
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    top: 3;
+    filter: invert(1);
+}
+
+.btn-start{
+    font-size: 2rem;
+    background-color: black;
+    color: white;
+    transition: .2s ease-in-out;
+}
+.btn-start:hover{
+    background-color: rgb(155, 155, 155);
+    transition: .2s ease-in-out;
+}
+.selection:hover{
+    cursor: pointer;
+
+}
+.selection:disabled{
+    color: inherit;
+}
+#gameOver{
+    text-align: center;
+    color:black;
+    font-size: 2.5em;
+    background: linear-gradient(#ffffff,#e4e2e2);
+}
+
