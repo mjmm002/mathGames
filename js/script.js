@@ -79,7 +79,7 @@ function GameStart(){
     <span class="col-6" id="Missed">15</span>
     <span class="col-6">Accuracy</span>
     <span class="col-6" id="Accuracy">20%</span>
-    <span class="col-12"></i> <i class="fa-solid fa-house" id="home"></i></span>
+    <span class="col-12"><i class="fa-solid fa-house" id="home"></i></span>
     </div>`);
 
     let startGame =document.createElement("div");
